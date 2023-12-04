@@ -1,7 +1,6 @@
 import axios from 'axios';
 import Image from 'next/image';
 import Head from 'next/head';
-import styles from '../../../styles/show.module.css';
 export default function show({data}) {
   return (
     <>
@@ -66,6 +65,7 @@ export async function getStaticPaths() {
     };
   });
 
+  // console.log(JSON.stringify(paths));
   return {
     paths: paths,
     fallback: false

@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export default function Navigation() {
   return (
-    <ul className='navClass'>
+    <ul className='navClass center'>
       <li className='nav'>
         <Link href='/'>Home</Link>
       </li>

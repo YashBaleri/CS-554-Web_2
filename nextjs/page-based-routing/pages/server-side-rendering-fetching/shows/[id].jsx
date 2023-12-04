@@ -1,6 +1,6 @@
 import axios from 'axios';
 import Image from 'next/image';
-import styles from '../../../styles/show.module.css';
+import styles from '@/styles/show.module.css';
 import Head from 'next/head';
 export default function show({data}) {
   return (

@@ -3,6 +3,9 @@
   padding: 0;
   margin: 0;
 }
+div {
+  color: #dedbdb;
+}
 
 html,
 body {
@@ -23,7 +26,6 @@ body {
 a:hover {
   color: #1e8678;
   background-color: white;
-  text-shadow: 2px 2px 4px #000000;
 }
 
 a {
@@ -60,4 +62,13 @@ p {
   li.nav {
     display: inline;
   }
+}
+
+.error {
+  color: salmon;
+  font-weight: bolder;
+}
+
+.seedLink {
+  font-size: inherit;
 }

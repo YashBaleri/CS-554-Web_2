@@ -2,7 +2,7 @@ import {useState, useEffect} from 'react';
 import Head from 'next/head';
 import {useRouter} from 'next/router';
 import Image from 'next/image';
-import styles from '../../../styles/show.module.css';
+import styles from '@/styles/show.module.css';
 export default function ShowCS() {
   const router = useRouter();
   const {id} = router.query;
@@ -15,6 +15,7 @@ export default function ShowCS() {
       fetch('http://api.tvmaze.com/shows/' + id)
         .then((res) => res.json())
         .then((data) => {
+          console.log(`Fetched a show (CSF): ${data.name}`);
           setData(data);
           setLoading(false);
         });
@@ -57,8 +58,6 @@ export default function ShowCS() {
           width={209}
         />
       </div>
-
-      <style jsx>{``}</style>
     </>
   );
 }
